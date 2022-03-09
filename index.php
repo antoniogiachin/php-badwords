@@ -1,7 +1,7 @@
 <?php
 
     // stringa da stampare
-    $stringaStampa = 'ciao a tutti belli e ...! ';
+    $stringaStampa = 'ciao a tutti quanti, ma proprio tutti, ma tutti tutti tutti proprio! ';
     
     // se utente inserisce una parola con get allora...
     if(isset($_GET['parolaUtente'])){
@@ -13,10 +13,8 @@
     
         
         // con str_replace dico di sostituire la parola inserita con *** 
-        $parolaCensurata = str_replace($parolaUtente, "***", $parolaUtente);
+        $stringaStampa = str_replace($parolaUtente, "***", $stringaStampa);
         
-        // stringa con censura
-        $stringaStampa = 'ciao a tutti belli e ' . $parolaCensurata;
     };
 
     // rimuovo spaziature
