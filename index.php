@@ -2,10 +2,6 @@
 
     // stringa da stampare
     $stringaStampa = 'ciao a tutti belli e ...! ';
-
-    // rimuovo spaziature
-    $stringaStampaFinale = str_replace(" ", "", $stringaStampa);
-
     
     // se utente inserisce una parola con get allora...
     if(isset($_GET['parolaUtente'])){
@@ -22,6 +18,9 @@
         // stringa con censura
         $stringaStampa = 'ciao a tutti belli e ' . $parolaCensurata;
     };
+
+    // rimuovo spaziature
+    $stringaStampaFinale = str_replace(" ", "", $stringaStampa);
 
     // lunghezza stringa da stampare
     $stringaStampaLength = strlen($stringaStampaFinale);
