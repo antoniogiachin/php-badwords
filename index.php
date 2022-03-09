@@ -13,7 +13,7 @@
     
         
         // con str_replace dico di sostituire la parola inserita con *** 
-        $parolaCensurata = str_replace("brutti", "***", $parolaUtente);
+        $parolaCensurata = str_replace($parolaUtente, "***", $parolaUtente);
         
         // stringa con censura
         $stringaStampa = 'ciao a tutti belli e ' . $parolaCensurata;
